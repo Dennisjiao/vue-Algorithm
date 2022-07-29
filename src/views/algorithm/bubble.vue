@@ -1,12 +1,19 @@
 <template>
 
   <div>
-    <el-button type="primary" icon="el-icon-circle-check-outline" @click="handleConfirm" round>
+    <div id="Animation"  width=300px height="300px">
+      Animation
+    </div>
+
+    <div id="teach" style="position:absolute">
+        <iframe width="600px"  height="500px" src="https://ruipengjiao.com"></iframe>
+    </div>
+    <!-- <el-button type="primary" icon="el-icon-circle-check-outline" @click="handleConfirm" round>
       Save
   </el-button>
   <el-button icon="el-icon-caret-right" type="info" @click="handleRunCode" round>
       Run
-  </el-button>
+  </el-button> -->
   <code-editor
     :cmTheme="cmTheme"
     :cmMode="cmMode"
@@ -108,7 +115,9 @@
     components: {codemirror},
     data() {
       return {
-        code: 'select a from table1 where b = 1',
+        code: '//Bubble sort\npublic class Main {\n}',
+        
+        
         cmOptions: {
           // 语言及语法模式
           mode: 'text/x-java',
@@ -143,7 +152,8 @@
       inputChange(content) {
         this.$nextTick(() => {
           console.log("code:" + this.code);
-          console.log("content:" + content)
+          console.log("content:" + content);
+          
         });
       },
     },
@@ -156,8 +166,12 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .CodeMirror{
-    width: 900px !important;
-  }
+    float: right;
+    margin-left: 0px;
+    width: 50% !important;
+    height: 700px;
+  }  
+  
 </style>

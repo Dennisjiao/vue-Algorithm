@@ -44,46 +44,18 @@ export const constantRouterMap = [
     name: 'Main Page',//医院设置管理
     meta: { title: 'Main Page', icon: 'example' },
     children: [
+      // {
+      //   path: 'list',
+      //   name: '医院设置管理',
+      //   component: () => import('@/views/hospset/list'),
+      //   meta: { title: '医院设置列表', icon: 'table' }
+      // },
       {
         path: 'list',
-        name: '医院设置管理',
-        component: () => import('@/views/hospset/list'),
-        meta: { title: '医院设置列表', icon: 'table' }
-      },
-      {
-        path: 'add',
-        name: '医院设置添加',
-        component: () => import('@/views/hospset/add'),
-        meta: { title: '医院设置添加', icon: 'tree' }
-      },
-      {
-        path: 'edit/:id',
-        name: 'EduTeacherEdit',
-        component: () =>import('@/views/hospset/add'),
-        meta: { title: '编辑', noCache: true },
-        hidden: true
-      },
-      {
-        path: 'hosp/list',
-        name: '医院列表',
-        component: () => import('@/views/hosp/list'),
-        meta: { title: '医院列表', icon: 'table' }
-      },
-      {
-        path: 'hospital/show/:id',
-        name: '查看',
-        component: () => import('@/views/hosp/show'),
-        meta: { title: '查看', noCache: true },
-        hidden: true
-      },
-      {
-        path: 'hospital/schedule/:hoscode',
-        name: '排班',
-        component: () => import('@/views/hosp/schedule'),
-        meta: { title: '排班', noCache: true },
-        hidden: true
-      }      
-      
+        name: 'MainTest',
+        component: () => import('@/views/mainpage/mainproject'),
+        meta: { title: 'Main Test', icon: 'table' }
+      }
         
     ]
   },
@@ -125,6 +97,41 @@ export const constantRouterMap = [
         name: 'Selection Sort',
         component: () => import('@/views/algorithm/selection'),
         meta: { title: 'Selection Sort', icon: 'table' }
+      }
+    ]
+  },
+  //动画展示
+  {
+    path: '/animation',
+    component: Layout,
+    redirect: '/animation/list',
+    name: 'Sort Animation ',//数据管理
+    alwaysShow:true,
+    meta: { title: 'Sort Animation', icon: 'example' },
+    children: [
+      {
+        path: 'Bubble',
+        name: 'Bubble',
+        component: () => import('@/views/animation/bubbleanimation'),
+        meta: { title: 'Bubble', icon: 'table' }
+      },
+      {
+        path: 'Quick',
+        name: 'Quick ',
+        component: () => import('@/views/animation/quickanimation'),
+        meta: { title: 'Quick', icon: 'table' }
+      },
+      {
+        path: 'Shell',
+        name: 'Shell',
+        component: () => import('@/views/animation/shellanimation'),
+        meta: { title: 'Shell', icon: 'table' }
+      },
+      {
+        path: 'Selection',
+        name: 'Selection',
+        component: () => import('@/views/animation/selectionanimation'),
+        meta: { title: 'Selection', icon: 'table' }
       }
     ]
   },
