@@ -25,6 +25,7 @@
 	.sort_span{
 		width: 100%;
 		display: block;
+		font-style: #fff;
 		height: 50%;
 		background: #89c3d8;
 		position:absolute;

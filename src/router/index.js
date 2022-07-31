@@ -68,12 +68,12 @@ export const constantRouterMap = [
     alwaysShow:true,
     meta: { title: 'Sort Algorithm', icon: 'example' },
     children: [
-      {
-        path: 'list',
-        name: '数据字典',
-        component: () => import('@/views/dict/list'),
-        meta: { title: '数据字典', icon: 'table' }
-      },
+      // {
+      //   path: 'list',
+      //   name: '数据字典',
+      //   component: () => import('@/views/dict/list'),
+      //   meta: { title: '数据字典', icon: 'table' }
+      // },
       {
         path: 'Bubble',
         name: 'Bubble Sort',

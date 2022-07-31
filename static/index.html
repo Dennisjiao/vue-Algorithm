@@ -15,13 +15,9 @@
 	.form-group{
 		margin-bottom: 10px;
 	}
-	.form-control{
-/*	line-height: 32px;
-height: 32px;*/
-}
-.num-input{
-	width: 600px;
-}
+	.num-input{
+		width: 600px;
+	}
 
 .buttonSpeedFast { /* 按钮美化 */
 	width: 150px; /* 宽度 */
@@ -76,7 +72,7 @@ height: 32px;*/
 	height: 40px; /* 高度 */
 	border-width: 0px; /* 边框宽度 */
 	border-radius: 3px; /* 边框半径 */
-	background: #1E90FF; /* 背景颜色 */
+	background: #ff5555; /* 背景颜色 */
 	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
 	outline: none; /* 不显示轮廓线 */
 	font-family: Microsoft YaHei; /* 设置字体 */
@@ -84,45 +80,87 @@ height: 32px;*/
 	font-size: 17px; /* 字体大小 */
 }
 .start:hover { /* 鼠标移入按钮范围时改变颜色 */
-	background: #5599FF;
+	background: #f3969c;
+}
+
+.form-control-num-input{
+	width:400px;
+    min-height:20px;
+    max-height:300px;
+    height:120px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:3px;
+    outline:0;
+    border:2px solid #a0b3d6;
+    font-size:22px;
+	font-family:'Courier New', Courier, monospace;
+    line-height:24px;
+    padding:2px;
+    word-wrap:break-word;
+    overflow-x:hidden;
+    overflow-y:auto;
+    border-color:rgba(82,168,236,0.8);
+    box-shadow:inset01px3pxrgba(0,0,0,0.1),008pxrgba(82,168,236,0.6);
+}
+
+.form-control{
+	border: 1px solid #ccc;
+                padding: 6px 0px;
+                border-radius: 3px;
+                padding-left:5px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+
+.form-control:focus{
+                    border-color: #66afe9;
+                    outline: 0;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 
 
 </style>
 <form>
+	<label for="arrLen">Number of Array: </label>
 	<div class="form-group">
-		<label for="arrLen">数组长度：</label>
+		
 		<input name="arrLen" class="form-control" value = '20'>
-		<input value = '生成数组' id="createArr" type="button">
-	</div>
-	<div class="form-group">
-		<label for="arr">数组：</label><textarea name="arr" class="form-control num-input" rows="5">[66,78,90,22,64,18,86,32,19,60,28,24,23,17,67,82,57,89,33,11]</textarea>
-	</div>
-	<div class="form-group">
-		<label for="speed">速度：</label>
-		<input id="speedUp" value="加快" class="buttonSpeedFast" type="button">
-		<input id="speedDown" value="减慢" class="buttonSpeedSlow" type="button">
-	</div>
-
-	<div class="form-group sortBtn">
-		<label for="arr">排序方式：</label>
-		<input id="bubble" value="冒泡排序" class="start" type="button">
+		<input value = 'Random Array' id="createArr" type="button">
 	</div>
 	
+	<div style="height: 20px;">
+
+	</div>
+	
+	<label for="arr">Value of Array: </label>
+	<div class="form-group">
+		<textarea name="arr" class="form-control-num-input" rows="5">[66,78,90,22,64,18,86,32,19,60,28,24,23,17,67,82,57,89,33,11]</textarea>
+	</div>
+	<div class="form-group">
+		
+		<input id="speedDown" value="Slow down" class="buttonSpeedSlow" type="button">
+		<input id="bubble" value="Start" class="start" type="button">
+		<input id="speedUp" value="Acceleration " class="buttonSpeedFast" type="button">
+		
+		
+
+	</div>
+
+	
+	
 	<ul class="sort_ul">
- 	<!--<li class="sort_li"><span class="sort_span" style="height: 40%"></span></li>
-	<li class="sort_li"><span class="sort_span" style="height: 30%"></span></li>
-	<li class="sort_li"><span class="sort_span" style="height: 70%"></span></li>
-	<li class="sort_li"><span class="sort_span" style="height: 20%"></span>
-		<span class="sort_span_in " style="height: 10%"></span>
-	</li> -->
-</ul>
+		<li class="sort_li"><span class="sort_span" ></span></li>
+	
+			<span class="sort_span_in " style="height: 10%"></span>
+		</li>
+	</ul>
 
 </form>
-
-
-
-
 
 
 <body>

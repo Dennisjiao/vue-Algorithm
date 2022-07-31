@@ -1,12 +1,10 @@
 <template>
 
   <div>
-    <div id="Animation"  width=300px height="300px">
-      Animation
-    </div>
+    
 
     <div id="teach" style="position:absolute">
-        <iframe width="600px"  height="500px" src="https://ruipengjiao.com"></iframe>
+        <iframe width="680px"  height="720px" src="https://www.javatpoint.com/bubble-sort"></iframe>
     </div>
     <!-- <el-button type="primary" icon="el-icon-circle-check-outline" @click="handleConfirm" round>
       Save
