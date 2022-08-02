@@ -2,7 +2,7 @@
 <template>
 
     <div>
-        <iframe src="../../static/index.html" style="width:1200px;height:690px;" frameborder="0"></iframe>
+        <iframe src="../../static/bubbleSort/index.html" style="width:1200px;height:690px;" frameborder="0"></iframe>
     </div>
     
 

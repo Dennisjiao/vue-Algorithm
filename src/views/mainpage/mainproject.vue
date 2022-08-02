@@ -1,7 +1,10 @@
 <template>
-   <div id="teach" style="position:absolute">
-        <iframe width="1300px"  height="700px" src="http://localhost:9999"></iframe>
+    <div>
+        <div id="teach" style="position:absolute">
+            <iframe width="1350px"  height="705px" src="http://localhost:9999"></iframe>
+        </div>
     </div>
+   
 				
 		<!-- 开发环境版本，包含了有帮助的命令行警告 -->
         

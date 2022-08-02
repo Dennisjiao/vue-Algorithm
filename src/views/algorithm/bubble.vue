@@ -96,6 +96,9 @@
   import 'codemirror/addon/fold/markdown-fold.js';
   import 'codemirror/addon/fold/comment-fold.js';
 
+  //在codemirror上显示更多的代码
+  import dedent from 'dedent'
+
   // merge功能
   import 'codemirror/addon/merge/merge.css'
   import 'codemirror/addon/merge/merge'
@@ -113,7 +116,33 @@
     components: {codemirror},
     data() {
       return {
-        code: '//Bubble sort\npublic class Main {\n}',
+        code: dedent`
+        //Bubble sort
+        public class Main {
+            public static void main(String[] args) {
+                int[] arr = new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1};
+                int[] arrs = MaoPao(arr);
+                for(int i=0;i<arr.length;i++){
+                  System.out.print(arrs[i]+" ");
+            }
+            }
+
+            public static int[] MaoPao(int[] arr) {
+              //External circulation
+                for (int i = 0; i < arr.length - 1; i++) {
+                  //Inner Circle
+                    for (int j = 0; j < arr.length - 1 - i; j++) {
+                      //Comparison between two
+                        if (arr[j] > arr[j + 1]) {
+                            int temp = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = temp;
+                        }
+                    }
+                }
+                return arr;
+            }
+        }`,
         
         
         cmOptions: {
@@ -151,8 +180,10 @@
         this.$nextTick(() => {
           console.log("code:" + this.code);
           console.log("content:" + content);
-          
         });
+
+     
+      
       },
     },
     mounted() {

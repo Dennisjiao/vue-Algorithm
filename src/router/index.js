@@ -38,10 +38,11 @@ export const constantRouterMap = [
   },
 
   {
-    path: '/hospSet',
+    path: '/mainpage',
     component: Layout,
-    redirect: '/example/table',
+    redirect: '/mainpage/list',
     name: 'Main Page',//医院设置管理
+    alwaysShow:true,
     meta: { title: 'Main Page', icon: 'example' },
     children: [
       // {
@@ -51,7 +52,7 @@ export const constantRouterMap = [
       //   meta: { title: '医院设置列表', icon: 'table' }
       // },
       {
-        path: 'list',
+        path: 'MainTest',
         name: 'MainTest',
         component: () => import('@/views/mainpage/mainproject'),
         meta: { title: 'Main Test', icon: 'table' }
