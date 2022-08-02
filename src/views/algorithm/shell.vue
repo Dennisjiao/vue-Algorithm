@@ -117,28 +117,30 @@
     data() {
       return {
         code: dedent`
-            public class Main {
-    public static void main(String[] args) {
-        Integer[] arr = new Integer[]{9, 8, 7, 6, 5, 4, 3, 2, 1};
-        shellSort(arr);
-        for(int i=0;i<arr.length;i++){
-      		System.out.print(arr[i]+" ");
-		}
-    }
+/*
+* Shell Sort
+*/
+public class Main {
+public static void main(String[] args) {
+    Integer[] arr = new Integer[]{9, 8, 7, 6, 5, 4, 3, 2, 1};
+    shellSort(arr);
+    for(int i=0;i<arr.length;i++){
+  	  System.out.print(arr[i]+" ");
+	  }
+}
 
-    public static void shellSort(Comparable[] arr) {
-        int j;
-        for (int gap = arr.length / 2; gap >  0; gap /= 2) {
-            for (int i = gap; i < arr.length; i++) {
-                Comparable tmp = arr[i];
+public static void shellSort(Comparable[] arr) {
+    int j;
+    for (int gap = arr.length / 2; gap >  0; gap /= 2) {
+        for (int i = gap; i < arr.length; i++) {
+            Comparable tmp = arr[i];
                 for (j = i; j >= gap && tmp.compareTo(arr[j - gap]) < 0; j -= gap) {
                     arr[j] = arr[j - gap];
                 }
-                arr[j] = tmp;
+            arr[j] = tmp;
             }
         }
     }
-
 }
 
         `,
