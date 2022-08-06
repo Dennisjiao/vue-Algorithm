@@ -37,29 +37,7 @@ export const constantRouterMap = [
     }]
   },
 
-  {
-    path: '/mainpage',
-    component: Layout,
-    redirect: '/mainpage/list',
-    name: 'Main Page',//医院设置管理
-    alwaysShow:true,
-    meta: { title: 'Main Page', icon: 'example' },
-    children: [
-      // {
-      //   path: 'list',
-      //   name: '医院设置管理',
-      //   component: () => import('@/views/hospset/list'),
-      //   meta: { title: '医院设置列表', icon: 'table' }
-      // },
-      {
-        path: 'MainTest',
-        name: 'MainTest',
-        component: () => import('@/views/mainpage/mainproject'),
-        meta: { title: 'Main Test', icon: 'table' }
-      }
-        
-    ]
-  },
+  
 //数据管理，数据字典
   {
     path: '/cmn',
@@ -134,6 +112,25 @@ export const constantRouterMap = [
         component: () => import('@/views/animation/selectionanimation'),
         meta: { title: 'Selection', icon: 'table' }
       }
+    ]
+  },
+
+  {
+    path: '/mainpage',
+    component: Layout,
+    redirect: '/mainpage/list',
+    name: 'Implementation',//医院设置管理
+    alwaysShow:true,
+    meta: { title: 'Implementation', icon: 'example' },
+    children: [
+      
+      {
+        path: 'MainTest',
+        name: 'Implementation',
+        component: () => import('@/views/mainpage/mainproject'),
+        meta: { title: 'Implementation', icon: 'table' }
+      }
+        
     ]
   },
 
