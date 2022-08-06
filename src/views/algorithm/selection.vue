@@ -118,10 +118,10 @@
     data() {
       return {
         code: dedent`
-        /*
-         * Selection Sort
-         */
-        public class Main {
+/*
+* Selection Sort
+*/
+public class Main {
     public static void main(String[] args) {
         int[] arr = new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1};
         selectionSort(arr);
@@ -132,12 +132,12 @@
 
     public static void selectionSort(int[]nums){
     	int length=nums.length;
-    	//最小值的索引
+    	//Index of minimum values
     	int index;
 		for(int i=0;i<length;i++){
 			index=i;
 			for(int j=i+1;j<length;j++){
-				//寻找最小的值
+				//Find the smallest value
 				if(nums[j]<nums[index]){
 					index=j;
 				}
