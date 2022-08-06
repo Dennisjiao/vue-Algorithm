@@ -60,7 +60,7 @@
 	
 	<!--下面四个图-->
      <div id="low">
-	  <div class="a"><img style="height:200px; width:320px" src="./images/B.png" />
+	  <div class="a"><img style="height:200px; width:320px" src="./images/A.png" />
     <div class="cl" style="text-align:center; margin-top:20px;">Java Evaluation</div></div>
 	  
     <div class="b"><img style="height:200px; width:320px" src="./images/B.png" />
