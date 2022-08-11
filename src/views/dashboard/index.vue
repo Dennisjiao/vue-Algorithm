@@ -14,11 +14,11 @@
 	<!--以上为topic-->
 	
 	<div id="picb">
-    <div class="picMain"><img src="./images/banner.jpg" /></div>
+    <div class="picMain"><img style="height:500px; width:1000px" src="./images/4.png" /></div>
     
 	  
     <div id="intro">
-      <p>This is a system which based algorithm education.</p>
+      <p>A system which based algorithm education</p>
       
   </div>
     
@@ -30,7 +30,7 @@
 	
 	<div id="picm">
 	  <div class="a">
-	    <img src="./images/pic.jpg" />
+	    <img src="./images/5.png" />
 	  </div>
 	   <div id="wenzi">
 	    <div class="b">
@@ -54,20 +54,22 @@
 	     <p><strong>Function</strong></p>
 	   </div>
 	   <div class="two">
-	     <p>My philosophy of fashion is that I like to make clothes that flatter.We are becoming one of the market leaders in the fashion industry</p>
+      <p>Algorithm demonstration:    Showing algorithm knowledge and sample code</p>
+      <p>Algorithm animation:         Visualization of the algorithm process</p>
+	    <p>Algorithm implementation:    Running Java code</p>
 	   </div>
 	</div>
 	
 	<!--下面四个图-->
      <div id="low">
 	  <div class="a"><img style="height:200px; width:320px" src="./images/A.png" />
-    <div class="cl" style="text-align:center; margin-top:20px;">Java Evaluation</div></div>
+    <div class="cl" style="text-align:center; margin-top:20px;">Algorithm display</div></div>
 	  
     <div class="b"><img style="height:200px; width:320px" src="./images/B.png" />
-    <div class="cl" style="text-align:center; margin-top:20px;">Algorithm Display</div></div>
+    <div class="cl" style="text-align:center; margin-top:20px;">Algorithm animation</div></div>
 	  
     <div class="c"><img style="height:200px; width:320px" src="./images/C.png" />
-    <div class="cl" style="text-align:center; margin-top:20px;">Algorithm Animation</div></div>
+    <div class="cl" style="text-align:center; margin-top:20px;">Algorithm implementation</div></div>
 	  <!-- <div class="d"><img src="./images/fp4.jpg" /><div class="cl"></div></div> -->
 	 </div>
 	 
@@ -132,9 +134,9 @@ ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
 #intro{
   
   width: 350px;
-  margin-top: -200px;
-  margin-left: 50px;
-  margin-bottom: 200px;
+  margin-top: -320px;
+  margin-left: 600px;
+  margin-bottom: 300px;
 }
 
 
