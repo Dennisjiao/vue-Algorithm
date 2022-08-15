@@ -1,17 +1,9 @@
 <template>
-
   <div>
-    
-
     <div id="teach" style="position:absolute">
         <iframe width="680px"  height="720px" src="https://www.javatpoint.com/bubble-sort"></iframe>
     </div>
-    <!-- <el-button type="primary" icon="el-icon-circle-check-outline" @click="handleConfirm" round>
-      Save
-  </el-button>
-  <el-button icon="el-icon-caret-right" type="info" @click="handleRunCode" round>
-      Run
-  </el-button> -->
+    
   <code-editor
     :cmTheme="cmTheme"
     :cmMode="cmMode"

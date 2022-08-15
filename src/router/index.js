@@ -38,21 +38,15 @@ export const constantRouterMap = [
   },
 
   
-//数据管理，数据字典
+//Sort Algorithm
   {
     path: '/cmn',
     component: Layout,
     redirect: '/cmn/list',
-    name: 'Sort Algorithm',//数据管理
+    name: 'Sort Algorithm',//Sort Algorithm
     alwaysShow:true,
     meta: { title: 'Sort Algorithm', icon: 'example' },
     children: [
-      // {
-      //   path: 'list',
-      //   name: '数据字典',
-      //   component: () => import('@/views/dict/list'),
-      //   meta: { title: '数据字典', icon: 'table' }
-      // },
       {
         path: 'Bubble',
         name: 'Bubble Sort',
@@ -79,7 +73,7 @@ export const constantRouterMap = [
       }
     ]
   },
-  //动画展示
+  //animation display
   {
     path: '/animation',
     component: Layout,
