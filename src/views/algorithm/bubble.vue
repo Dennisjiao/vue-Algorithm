@@ -18,7 +18,6 @@
       :code="code"
       :options="cmOptions"
       @input="inputChange"
-      
     ></codemirror>
   </div>
 </template>
@@ -26,9 +25,9 @@
 <script>
     // 全局引入vue-codemirror
   import {codemirror} from 'vue-codemirror';
-  // 引入css文件
+  // import css
   import 'codemirror/lib/codemirror.css'
-  // 引入主题 可以从 codemirror/theme/ 下引入多个
+  // import codemirror/theme/ 下引入多个
   import 'codemirror/theme/idea.css'
   // 引入语言模式 可以从 codemirror/mode/ 下引入多个
   import 'codemirror/mode/sql/sql.js';

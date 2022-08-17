@@ -63,12 +63,9 @@ function quickSort(arr,a,b,qArr){
 *  tag:当前在对比的序号;循环中的k
 */
 function quickSortDom(arr,a,b,tag){
-
 	var html='',item= '',len = arr.length,i;
 	for (i = 0; i < len; i++) {
-
 		spanClass = 'sort_span';
-
 		if(a<=i && i<=b){
 			spanClass += ' sort_span_blue';
 		}
@@ -77,7 +74,6 @@ function quickSortDom(arr,a,b,tag){
 			spanClass += ' sort_span_tag';
 		}
 		item = '<li class="sort_li"><span class="'+ spanClass +'" style="height: '+arr[i]+'%"></span></li>';
-
 		html= html+item;
 	}
 	document.querySelector('.sort_ul').innerHTML = html;
