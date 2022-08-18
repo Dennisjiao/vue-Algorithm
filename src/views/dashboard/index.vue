@@ -7,7 +7,6 @@
 	    <p><strong>Introduction</strong></p>
 	  </div>
 	  <div class="right">
-	    <!-- <p><strong><a href="#">HOME</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="#">LOG</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="#">WOOD</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="#">PEACH</a></strong></p> -->
 	  </div>
 	</div>
 	
