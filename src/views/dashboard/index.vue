@@ -10,7 +10,7 @@
 	  </div>
 	</div>
 	
-	<!--以上为topic-->
+	<!--topic-->
 	
 	<div id="picb">
     <div class="picMain"><img style="height:500px; width:1000px" src="./images/4.png" /></div>
